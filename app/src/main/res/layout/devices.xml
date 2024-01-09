@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app='http://schemas.android.com/apk/res-auto'
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blue72"
+    tools:context=".Devices">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="813dp"
+
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="778dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:id="@+id/DeviceScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Devices"
+                android:textAlignment="center"
+                android:textColor="@color/blue83"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/Add_device_MM"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/deviceloc"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <EditText
+                android:id="@+id/deviceOwner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/DeviceOwner"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <Button
+                android:id="@+id/AddDevice"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/addDevices"
+                android:textSize="15sp"
+                app:cornerRadius="200dp" />
+
+            <EditText
+                android:id="@+id/DeviceIDToDelete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/deviceID"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <Button
+                android:id="@+id/deleteDevices"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/deleteDevices"
+                android:textSize="15sp"
+                app:cornerRadius="200dp" />
+
+
+
+
+
+            <TableLayout
+                android:id="@+id/tableTitleLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableTitleLayou1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue83"
+                    android:padding="16dp"
+                    android:stretchColumns="*">
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="ID"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="Make and Model"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="Owner"
+                        android:textStyle="bold" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableLayou1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:stretchColumns="*">
+
+                    <TextView
+                        android:padding="8dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="8dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:padding="8dp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IOT"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Cameras"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Devices"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".InsideLights"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".OutsideLights"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LockDoors"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Registration"
+            android:exported="true"/>
+        <activity
+            android:name=".CameraAdapter"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CameraModel"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CameraDBHelper"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="DeviceAdapter"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DeviceModel"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DeviceDBHelper"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="InsideLightAdapter"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".InsideLightModel"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".InsideLightDBHelper"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="OutsideLightAdapter"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".OutsideLightsModel"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".OutsideLightDBHelper"
+            android:exported="true">
+        </activity>
+
+    </application>
+
+</manifest>

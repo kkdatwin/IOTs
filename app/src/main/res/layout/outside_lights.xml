@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app='http://schemas.android.com/apk/res-auto'
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blue72"
+    tools:context=".OutsideLights">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="813dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="778dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:id="@+id/outside_lights_Screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Out_Door_Lights"
+                android:textAlignment="center"
+                android:textColor="@color/blue83"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/outside_lights_room"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/OutsideLightsRoom"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <EditText
+                android:id="@+id/type_Of_Light"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/typeOfLight"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <Button
+                android:id="@+id/AddLight"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/add_outside_lights"
+                android:textSize="15sp"
+                app:cornerRadius="200dp" />
+
+            <EditText
+                android:id="@+id/outsideLightsIDToDelete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/lightsID"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <Button
+                android:id="@+id/deleteOutsideLights"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/delete_outside_lights"
+                android:textSize="15sp"
+                app:cornerRadius="200dp" />
+
+
+
+
+
+            <TableLayout
+                android:id="@+id/tableTitleLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableTitleLayou3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue83"
+                    android:padding="16dp"
+                    android:stretchColumns="*">
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="ID"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="Room"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="Type"
+                        android:textStyle="bold" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableLayou3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:stretchColumns="*">
+
+                    <TextView
+                        android:padding="8dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:padding="8dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:padding="8dp"
+                        android:textStyle="bold" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

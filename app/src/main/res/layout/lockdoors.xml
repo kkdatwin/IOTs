@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app='http://schemas.android.com/apk/res-auto'
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/blue72"
+    tools:context=".LockDoors">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="754dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="714dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:id="@+id/CamScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LockDoors"
+                android:textAlignment="center"
+                android:textColor="@color/blue83"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LockDoorsScreen2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/SelectMain"
+                android:textAlignment="center"
+                android:textColor="@color/blue83"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/frontlockdoorb"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/frontunlockdoorb"
+                android:textSize="18sp"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/frontLockDoorsb"
+                android:layout_width="197dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/frontLockDoors"
+                android:textSize="18sp"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/backlockdoorb"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/backunlockdoorb"
+                android:textSize="18sp"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/backLockDoorsb"
+                android:layout_width="201dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue72"
+                android:text="@string/backLockDoorsb"
+                android:textSize="18sp"
+                app:cornerRadius="200dp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
